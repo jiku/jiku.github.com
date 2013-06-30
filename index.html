@@ -12,36 +12,24 @@
 	<link rel="stylesheet" href="http://craigsworks.com/projects/qtip_new/packages/nightly/jquery.qtip.css">
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="https://raw.github.com/twitter/bootstrap/master/docs/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="https://raw.github.com/twitter/bootstrap/master/docs/assets/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="https://raw.github.com/twitter/bootstrap/master/docs/assets/css/docs.css">
+  <link rel="stylesheet" href="https://raw.github.com/twitter/bootstrap/master/docs/assets/js/google-code-prettify/prettify.css">
+
+	<script>
+		App = angular.module('jiku', ['ui'])
 
 
-    <link href="https://raw.github.com/twitter/bootstrap/master/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="https://raw.github.com/twitter/bootstrap/master/docs/assets/css/docs.css" rel="stylesheet">
-    <link href="https://raw.github.com/twitter/bootstrap/master/docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+		angular.module('jiku.ui', ['ui']).value('ui.config', {
+	  	jq: {
+	  	  tooltip: {
+	  	    placement: 'bottom'
+	    	}
+		  }
+		});
 
-<script>
-App = angular.module('jiku', ['ui'])
-
-
-angular.module('jiku.ui', ['ui']).value('ui.config', {
-  jq: {
-    tooltip: {
-      placement: 'bottom'
-    }
-  }
-});
-
-angular.bootstrap(document, ['jiku']);
- </script>
-
- <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
- <script type="text/javascript">
-  $(document).ready(function(){
-    $.stratus({
-      links: 'http://soundcloud.com/jiku/ambisense',
-      auto_play: true
-    });
-  });
-</script>
+		angular.bootstrap(document, ['jiku']);
+	</script>
  
 	<style>
 		@import url(http://fonts.googleapis.com/css?family=Dosis:regular,bold&subset=latin,latin-ext); /* http://www.google.com/webfonts */
@@ -116,9 +104,19 @@ angular.bootstrap(document, ['jiku']);
 			-webkit-filter: grayscale(0);
 		}
 	</style>
+
+	<script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+	<script type="text/javascript">
+	 	$(document).ready(function(){
+	    $.stratus({
+	      links: 'http://soundcloud.com/jiku/ambitense',
+	      auto_play: true,
+	      // theme: 'assets/stratus/theme.css'
+	    });
+	  });
+	</script>
 </head>
 <body>
-
 	<div class="box">
 		<!--div id="logo"-->
 			<a title="E-mail e@jiku.ca" ui-jq="tooltip" href="mailto:e@jiku.ca" target="_parent"><img src='assets/images/logo.png'/></a>
@@ -127,8 +125,8 @@ angular.bootstrap(document, ['jiku']);
 			<a title="On SoundCloud" ui-jq="tooltip" href="http://soundcloud.com/jiku" target="_parent"><img src='assets/images/buttons/soundcloud.png'/></a>
 			<a title="On Bandcamp" ui-jq="tooltip" href="http://jiku.bandcamp.com/" target="_parent"><img src='assets/images/buttons/bandcamp.png'/></a>
 			<a title="On Twitter" ui-jq="tooltip" href="http://twitter.com/jiku_" target="_parent"><img src='assets/images/buttons/twitter.png'/></a>
-			<a title="On YouTube" ui-jq="tooltip" href="http://youtube.com/jiku115" target="_parent"><img src='assets/images/buttons/youtube.png'/></a>
-			<a title="On Facebook" ui-jq="tooltip"  href="http://facebook.com/jiku" target="_parent"><img src='assets/images/buttons/facebook.png'/></a>
+			<a title="On YouTube" ui-jq="tooltip" href="http://youtube.com/prism9" target="_parent"><img src='assets/images/buttons/youtube.png'/></a>
+			<a title="On Facebook" ui-jq="tooltip"  href="http://facebook.com/jiku.ca" target="_parent"><img src='assets/images/buttons/facebook.png'/></a>
 			<a title="On Google+" ui-jq="tooltip" href="http://plus.google.com/jiku" target="_parent"><img src='assets/images/buttons/google-plus.png'/></a>
 			<a title="On GitHub" ui-jq="tooltip" href="http://github.com/jiku" target="_parent"><img src='assets/images/buttons/github.png'/></a>
 		<!--/div-->
@@ -136,15 +134,15 @@ angular.bootstrap(document, ['jiku']);
 
 	&copy; Music for the massless.
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UD-21314");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+  <script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+		try {
+      var pageTracker = _gat._getTracker("UD-21314");
+    	pageTracker._trackPageview();
+    } catch(err) {}
+	</script>
 </body>
 </html>
